@@ -1,0 +1,63 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Doozer script language",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#modifiers"
+		}
+		
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+					"begin": "//",
+					"end": "\\n",
+					"name": "comment.line.double-slash.doozer"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.doozer",
+				"match": "\\b(click|type|takeScreenshot|url|set|navigateTo|refresh|sendKeys|navigateBack|navigateForward|assertCurrentUrl)\\b"
+			}, {
+				"name": "variable.parameter.function.doozer",
+				"match": "\\b(selector|args|name|value)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.doozer",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [{
+					"name": "constant.character.escape.doozer",
+					"match": "\\\\."
+			}]
+		},
+		"modifiers": {
+			"patterns": [{
+				"match": "\\?",
+				"name": "string.optional.doozer"
+			}]
+		},
+		"variables": {
+			"patterns":[{
+				"begin": "\\${",
+				"end": "}",
+				"name": "variable.language.doozer"
+			}]
+		}
+	},
+	"scopeName": "source.doozer"
+}

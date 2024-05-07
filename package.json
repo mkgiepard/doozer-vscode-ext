@@ -1,0 +1,25 @@
+{
+  "name": "doozer",
+  "displayName": "DOOZER",
+  "description": "DOOZER script language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "doozer",
+      "aliases": ["Doozer script language", "doozer"],
+      "extensions": [".doozer"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "doozer",
+      "scopeName": "source.doozer",
+      "path": "./syntaxes/doozer.tmLanguage.json"
+    }]
+  }
+}
