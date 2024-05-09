@@ -9,10 +9,10 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#variables"
+			"include": "#strings"
 		},
 		{
-			"include": "#strings"
+			"include": "#variables"
 		},
 		{
 			"include": "#modifiers"
@@ -29,33 +29,37 @@
 		},
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.doozer",
-				"match": "\\b(click|type|takeScreenshot|url|set|navigateTo|refresh|sendKeys|navigateBack|navigateForward|assertCurrentUrl)\\b"
+				"name": "storage.type.doozer",
+				"match": "\\b(click|type|takeScreenshot|url|set|navigateTo|refresh|sendKeys|navigateBack|navigateForward|assertCurrentUrl|wait|waitForElement)\\b"
 			}, {
-				"name": "variable.parameter.function.doozer",
+				"name": "entity.name.type.class.doozer",
 				"match": "\\b(selector|args|name|value)\\b"
 			}]
 		},
 		"strings": {
-			"name": "string.quoted.double.doozer",
+			"name": "variable.strings.doozer",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [{
-					"name": "constant.character.escape.doozer",
+					"name": "variable.doozer",
 					"match": "\\\\."
-			}]
+			},{
+				"begin": "\\${",
+				"end": "}",
+				"name": "entity.name.operator.custom-literal.doozer"
+		}]
 		},
 		"modifiers": {
 			"patterns": [{
 				"match": "\\?",
-				"name": "string.optional.doozer"
+				"name": "entity.name.operator.custom-literal.doozer"
 			}]
 		},
 		"variables": {
 			"patterns":[{
 				"begin": "\\${",
 				"end": "}",
-				"name": "variable.language.doozer"
+				"name": "entity.name.operator.custom-literal.doozer"
 			}]
 		}
 	},
