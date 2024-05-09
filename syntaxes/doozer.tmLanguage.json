@@ -16,6 +16,9 @@
 		},
 		{
 			"include": "#modifiers"
+		},
+		{
+			"include": "#invalid"
 		}
 		
 	],
@@ -24,43 +27,47 @@
 			"patterns": [{
 					"begin": "//",
 					"end": "\\n",
-					"name": "comment.line.double-slash.doozer"
+					"name": "comment.line.double-slash"
 			}]
 		},
 		"keywords": {
 			"patterns": [{
-				"name": "storage.type.doozer",
+				"name": "entity.name.type",
 				"match": "\\b(click|type|takeScreenshot|url|set|navigateTo|refresh|sendKeys|navigateBack|navigateForward|assertCurrentUrl|wait|waitForElement)\\b"
 			}, {
-				"name": "entity.name.type.class.doozer",
+				"name": "entity.name.tag",
 				"match": "\\b(selector|args|name|value)\\b"
 			}]
 		},
 		"strings": {
-			"name": "variable.strings.doozer",
+			"name": "variable.strings",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [{
-					"name": "variable.doozer",
+					"name": "constant.character.escape",
 					"match": "\\\\."
 			},{
 				"begin": "\\${",
 				"end": "}",
-				"name": "entity.name.operator.custom-literal.doozer"
+				"name": "entity.name.operator.custom-literal"
 		}]
 		},
 		"modifiers": {
 			"patterns": [{
 				"match": "\\?",
-				"name": "entity.name.operator.custom-literal.doozer"
+				"name": "entity.name.operator.custom-literal"
 			}]
 		},
 		"variables": {
 			"patterns":[{
 				"begin": "\\${",
 				"end": "}",
-				"name": "entity.name.operator.custom-literal.doozer"
+				"name": "entity.name.operator.custom-literal"
 			}]
+		},
+		"invalid": {
+			"name": "invalid.illegal",
+			"match": "[a-zA-Z$_][\\.a-zA-Z0-9$_]*"
 		}
 	},
 	"scopeName": "source.doozer"
