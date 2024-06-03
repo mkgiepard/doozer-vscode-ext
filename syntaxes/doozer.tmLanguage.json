@@ -33,7 +33,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "entity.name.type",
-				"match": "\\b(click|type|takeScreenshot|url|set|navigateTo|refresh|sendKeys|navigateBack|navigateForward|assertCurrentUrl|wait|waitForElement)\\b"
+				"match": "\\b(click|type|takeScreenshot|url|set|navigateTo|refresh|sendKeys|navigateBack|navigateForward|assertCurrentUrl|assertPageTitle|wait|waitForElement)\\b"
 			}, {
 				"name": "entity.name.tag",
 				"match": "\\b(selector|args|name|value)\\b"
@@ -44,18 +44,18 @@
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [{
-					"name": "constant.character.escape",
-					"match": "\\\\."
+				"name": "constant.character.escape",
+				"match": "\\\\."
 			},{
-				"begin": "\\${",
-				"end": "}",
-				"name": "entity.name.operator.custom-literal"
-		}]
+				"name": "string",
+				"match": "[^(){}'\"]"
+			}
+		]
 		},
 		"modifiers": {
 			"patterns": [{
 				"match": "\\?",
-				"name": "entity.name.operator.custom-literal"
+				"name": "keyword.operator"
 			}]
 		},
 		"variables": {
