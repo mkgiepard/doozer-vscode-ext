@@ -38,3 +38,6 @@ selector:
 "By.is('something')"
 "Sl({button 'Accept *'})"
 "https://www.google.com?hl\=en"
+
+wrongAction
+
