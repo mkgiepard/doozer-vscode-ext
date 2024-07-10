@@ -13,6 +13,7 @@
   "engines": {
     "vscode": "^1.89.0"
   },
+  "icon": "logo/icon_128x134.png",
   "categories": [
     "Programming Languages"
   ],
