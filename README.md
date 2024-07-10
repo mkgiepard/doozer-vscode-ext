@@ -1,4 +1,4 @@
-# doozer extension in Visual Studio Code
+# doozer - VS Code Extension
 
 Provides basic syntax highlighting for doozer script language.
 
