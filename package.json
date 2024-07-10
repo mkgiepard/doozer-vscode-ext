@@ -1,8 +1,8 @@
 {
   "name": "doozer-highlight",
-  "displayName": "Doozer syntax highlighting",
+  "displayName": "Syntax highlighting for UI tests written with doozer",
   "description": "Syntax highlighting extension for Doozer script language",
-  "publisher": "softtest.dev",
+  "publisher": "softtest-dev",
   "repository": {
     "type": "git",
     "url": "https://github.com/mkgiepard/doozer-vscode-ext.git"
