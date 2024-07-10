@@ -1,7 +1,13 @@
 {
-  "name": "doozer",
-  "displayName": "DOOZER",
-  "description": "DOOZER script language",
+  "name": "doozer-highlight",
+  "displayName": "Doozer syntax highlighting",
+  "description": "Syntax highlighting extension for Doozer script language",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkgiepard/doozer-vscode-ext.git"
+  },
+  "author": "Mariusz Gieparda <mariusz@softtest.dev>",
+  "license": "The Apache License, Version 2.0",
   "version": "0.2.0",
   "engines": {
     "vscode": "^1.89.0"
