@@ -1,4 +1,5 @@
-action
+// comment
+
 alert
 assertCurrentUrl
 assertInnerText
@@ -40,4 +41,3 @@ selector:
 "https://www.google.com?hl\=en"
 
 wrongAction
-
