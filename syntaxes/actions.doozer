@@ -8,6 +8,7 @@ clear
 click
 contextClick
 doubleClick
+executeScript
 hover
 hoverByOffset
 iframe
