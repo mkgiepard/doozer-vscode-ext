@@ -33,7 +33,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "entity.name.type",
-				"match": "\\b(alert|assertCurrentUrl|assertInnerText|assertPageTitle|clear|click|contextClick|doubleClick|executeScript|hover|hoverByOffset|iframe|import|keyDown|keyUp|navigateBack|navigateForward|navigateTo|refresh|select|sendKeys|set|takeScreenshot|type|url|wait|waitForElement)\\b"
+				"match": "\\b(addMask|alert|assertCurrentUrl|assertInnerText|assertPageTitle|clear|click|contextClick|doubleClick|executeScript|hover|hoverByOffset|iframe|import|keyDown|keyUp|navigateBack|navigateForward|navigateTo|refresh|select|sendKeys|set|takeScreenshot|type|url|wait|waitForElement)\\b"
 			}, {
 				"name": "entity.name.tag",
 				"match": "\\b(selector|args|name|value)\\b"
