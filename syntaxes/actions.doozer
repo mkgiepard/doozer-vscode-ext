@@ -1,5 +1,6 @@
 // comment
 
+addMask
 alert
 assertCurrentUrl
 assertInnerText
