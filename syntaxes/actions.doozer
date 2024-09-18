@@ -8,6 +8,7 @@ assertPageTitle
 clear
 click
 contextClick
+deselect
 doubleClick
 executeScript
 hover
