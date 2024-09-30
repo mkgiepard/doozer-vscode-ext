@@ -13,6 +13,10 @@ Doozer actions and parameters in supported syntax highlighting modes:
 
 ## Release Notes
 
+### 0.2.3
+
+- Add new keyword: deselect
+
 ### 0.2.2
 
 - Add new keywords: addMask, executeScript

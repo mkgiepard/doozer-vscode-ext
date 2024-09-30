@@ -9,7 +9,7 @@
   },
   "author": "Mariusz Gieparda <mariusz@softtest.dev>",
   "license": "The Apache License, Version 2.0",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "engines": {
     "vscode": "^1.89.0"
   },
